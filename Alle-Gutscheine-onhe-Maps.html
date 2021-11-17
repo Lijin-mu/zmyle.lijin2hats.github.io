@@ -41,7 +41,7 @@
                             <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fas fa-search-location"></i></button>
                         </div>
                         <div >
-                            <button class="btn filter" type="button" id="button-addon1" data-bs-toggle="modal" data-bs-target="#filterModal"><i class="fas fa-filter"></i> filter</button>
+                            <button class="btn filter" type="button" id="filter-popup-btn" data-bs-toggle="modal" data-bs-target="#filterModal"><i class="fas fa-filter"></i> filter</button>
                         </div>
                     </div>
                         <nav class="nav-area">
@@ -52,9 +52,26 @@
                                 <li><a href="#"><i class="fas fa-user"></i></a></li>
                             </ul>
                         </nav>
-                        <div class="mobile-toggler">
-                            <i class="fas fa-bars"></i>
-                        </div>
+                        <div class="mob-only-area">
+                          <div class="mobile-spl-menu">
+                              <ul>
+                                <li>
+                                  <a class="map-filter-toggler">
+                                  <i class="fas fa-filter"></i>
+                                  <i class="fas fa-search-location"></i>
+                                </a>
+                                </li>
+                                  <li>
+                                      <a href="#" ><i class="fas fa-user"></i></a></a>
+                                  </li>
+                              </ul>
+                          </div>
+                          <div class="mobile-toggler">
+                              <div class="btn-line"></div>
+                              <div class="btn-line"></div>
+                              <div class="btn-line"></div>
+                          </div>
+                      </div>
                 </div>
             </div>
         </header>
@@ -76,8 +93,8 @@
                     </div>
                     
                     <div class="map-switcher">
-                        <i class="fas fa-map-marked-alt"></i>
-                        <a href="#">Karte anzeigen</a> 
+                        
+                        <a href="javascript:void(0)"><i class="fas fa-map-marked-alt"></i> Karte anzeigen</a> 
                     </div>
                 </div>
                 <div class="mid-title">
@@ -454,8 +471,8 @@
                                     <div class="footer-link-title">Lösungen</div>
                                     <ul class="link-list">
                                         <li>stores: <a href="#">Für Händler</a>, <a href="#">Gastronomen</a>, <a href="#">Dienstleister</a></a></li>
-                                        <li><a href="#">benefits: Für Arbeitgeber, Arbeitnehmer</a></li>
-                                        <li><a href="#">networks: Für Städte, Stadtmarketing</a></li>
+                                        <li>benefits: <a href="#">Für Arbeitgeber</a>, <a href="#">Arbeitnehmer</a></li>
+                                        <li>networks: <a href="#">Für Städte</a>, <a href="#">Stadtmarketing</a></li>
                                     </ul>
                                 </aside>
                             </div>
@@ -486,7 +503,7 @@
 
                         <div class="footer-credits">
                             <div class="container">
-                                <div class="top-border ptb-2">
+                                <div class="top-border fc-padding">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="footer-left">&copy; zmyle GmbH . <a target="_blank" href="#">Impressum</a> . <a target="_blank" href="#">Datenschutz</a> . <a target="_blank" href="#">Cookies</a></div>
@@ -494,7 +511,7 @@
                                 <div class="col-md-6">
                                     <div class="footer-right">
                                         <ul class="lang-list">
-                                            <a target="_blank" href="#"><li><i class="fas fa-globe"></i></a> German</li>
+                                            <a target="_blank" href="#"><li><i class="fas fa-globe"></i></a> <div>German</div></li>
                                         </ul>
                                         <ul>
                                             <li><a target="_blank" href="#"><i class="fab fa-instagram-square"></i></a></li>
@@ -541,46 +558,46 @@
           <div class="filter-check-group">
               <div class="check-title">Gastronomie</div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                <label class="form-check-label" for="inlineCheckbox1">Cafe</label>
+                <input class="form-check-input" type="checkbox" id="GastronomieCheckbox1" value="option1">
+                <label class="form-check-label" for="GastronomieCheckbox1">Cafe</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                <label class="form-check-label" for="inlineCheckbox2">Bar</label>
+                <input class="form-check-input" type="checkbox" id="GastronomieCheckbox2" value="option2">
+                <label class="form-check-label" for="GastronomieCheckbox2">Bar</label>
               </div>
               <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                <label class="form-check-label" for="inlineCheckbox3">Restaurant</label>
+                <input class="form-check-input" type="checkbox" id="GastronomieCheckbox3" value="option3">
+                <label class="form-check-label" for="GastronomieCheckbox3">Restaurant</label>
               </div>
           </div>
           <div class="filter-check-group">
             <div class="check-title">Geschäfte</div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-              <label class="form-check-label" for="inlineCheckbox1">Sport</label>
+              <input class="form-check-input" type="checkbox" id="GeschäfteCheckbox1" value="option1">
+              <label class="form-check-label" for="GeschäfteCheckbox1">Sport</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-              <label class="form-check-label" for="inlineCheckbox2">Tee</label>
+              <input class="form-check-input" type="checkbox" id="GeschäfteCheckbox2" value="option2">
+              <label class="form-check-label" for="GeschäfteCheckbox2">Tee</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-              <label class="form-check-label" for="inlineCheckbox3">Baumarkt</label>
+              <input class="form-check-input" type="checkbox" id="GeschäfteCheckbox3" value="option3">
+              <label class="form-check-label" for="GeschäfteCheckbox3">Baumarkt</label>
             </div>
         </div>
         <div class="filter-check-group">
             <div class="check-title">Kultur & Freizeit</div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-              <label class="form-check-label" for="inlineCheckbox1">Tanz</label>
+              <input class="form-check-input" type="checkbox" id="kfCheckbox1" value="option1">
+              <label class="form-check-label" for="kfCheckbox1">Tanz</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-              <label class="form-check-label" for="inlineCheckbox2">Kunst</label>
+              <input class="form-check-input" type="checkbox" id="kfCheckbox2" value="option2">
+              <label class="form-check-label" for="kfCheckbox2">Kunst</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-              <label class="form-check-label" for="inlineCheckbox3">Theater</label>
+              <input class="form-check-input" type="checkbox" id="kfCheckbox3" value="option3">
+              <label class="form-check-label" for="kfCheckbox3">Theater</label>
             </div>
         </div>
 
@@ -601,7 +618,7 @@
         <script src="vendor/js/bootstrap.bundle.min.js"></script>
         <script src="dist/js/all.js"></script>
         <script async
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoqkDSbGRa1UjIa_85AoI6bginCgv3Sr4&map_ids=5f41d52c83213f7e&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoqkDSbGRa1UjIa_85AoI6bginCgv3Sr4&map_ids=5f41d52c83213f7e&callback=initcustomMap">
 </script>
     </body>
 </html>

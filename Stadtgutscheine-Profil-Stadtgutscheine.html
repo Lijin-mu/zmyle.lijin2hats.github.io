@@ -34,16 +34,6 @@
                     <div class="logo-area">
                         <a href="index.html"><img src="./images/logo/logo.svg"> </a>
                     </div>
-                    <div class="filter-search-block">
-                        <div class="input-group search">
-                            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
-                            
-                            <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fas fa-search-location"></i></button>
-                        </div>
-                        <div >
-                            <button class="btn filter" type="button" id="button-addon1" data-bs-toggle="modal" data-bs-target="#filterModal"><i class="fas fa-filter"></i> filter</button>
-                        </div>
-                    </div>
                         <nav class="nav-area">
                             <ul>
                                 <li><a href="#"> zmyle </a></li>
@@ -52,71 +42,64 @@
                                 <li><a href="#"><i class="fas fa-user"></i></a></li>
                             </ul>
                         </nav>
-                        <div class="mobile-toggler">
-                            <i class="fas fa-bars"></i>
-                        </div>
+                        <div class="mob-only-area">
+                          <div class="mobile-spl-menu">
+                              <ul>
+                                  <li>
+                                      <a href="#" ><i class="fas fa-user"></i></a></a>
+                                  </li>
+                              </ul>
+                          </div>
+                          <div class="mobile-toggler">
+                              <div class="btn-line"></div>
+                              <div class="btn-line"></div>
+                              <div class="btn-line"></div>
+                          </div>
+                      </div>
                 </div>
             </div>
         </header>
 
         <!-- content area start -->
 
-
-<div class="page-wrap bg-light-blue">
-<div class="container">
-    <div class="page-title">Dein Restaurant</div>
-    <div class="basic-details-row">
-        <ul>
-            <li><i class="fas fa-map-marker-alt"></i>Rekener Str. 39a, 48653 Coesfeld</li>
-            <li><i class="fas fa-utensils"></i> Restaurant, Bar</li>
-            <li><i class="fas fa-share-alt"></i>Teilen</li>
-        </ul>
+<!-- <div class="row">
+    <div class="col-md-6">
+        <div id="map"></div>
     </div>
-    <div class="map-img-area">
-        <div class="row">
-            <div class="col-md-5">
-                <div class="main-img">
-
+</div> -->
+<div class="bg-light-blue">
+    <div class="map-full">
+        <div id="map"></div>
+        <div class="page-location-detail">
+            <div class="card ctype-a">
+                <div class="card-header">
+                    <picture>
+                        <source srcset="./images/OG-Wide-1.png">
+                        <img src="./images/OG-Wide-1.png" alt="OG-Wide-1">
+                      </picture>
+                    
                 </div>
-            </div>
-            <div class="col-md-2">
-                <div class="sub-img"></div>
-                <div class="all-img-btn">
-                    <button>Alle Fotos anzeien</button>
-                </div>
-            </div>
-            <div class="col-md-5">
-                <div class="place-map">
-                    <div id="resmap"></div>
+                <div class="card-body">
+                  <div class="card-title">Bad Wurzach</div> 
+                  <div class="item-value-row">
+                      <div class="ivr-item">Akzeptanzstellen</div>
+                      <div class="ivr-value">72</div>
+                  </div>
+                  <div class="item-value-row">
+                      <div class="ivr-item">Städte / Orte</div>
+                      <div class="ivr-value">1</div>
+                  </div>
+                  <a class="gen-link" href="#">duelmen-gutschein.de</a>
+                  <hr>
+                  <div class="medium-text"> Dülmen Marketing e.V.<br> Viktorstr. 6 <br>48249 Dülmen</div>
+                  <hr>
+                  <div class="small-text"> Du kannst den Gutschein nach dem Kauf direkt per E-Mail, WhatsApp & Co. verschicken oder als PDF herunterladen und ausdrucken.</div>
+                  <a href="#" class="fullwidth-btn gd-btn-blue">Zum Gutscheinkauf</a>
                 </div>
             </div>
         </div>
+        
     </div>
-    <div class="rest-details-area">
-        <div class="row">
-            <div class="col-md-7">
-                <div class="page-data">
-                    <h5>Über uns</h5>
-                    <p>Seit 1984 sind wir in Coesfeld Ihre zuverlässige Adresse für den Service rund um Schmuck, Trauringe, Perlen, und Uhren. Gerade diesen Servicequalitäten haben wir uns und unseren Mitarbeitern seit der Gründung unseres Unternehmens verschrieben. Wir freuen uns Sie persönlich beraten zu dürfen!</p>
-                    <hr>
-                    <h5>Kontakt</h5>
-                    <ul>
-                        <li>Rekener Str. 39a, 48653 Coesfeld</li>
-                        <li>02541 938 783 3</li>
-                        <li>dein@restaurant.de</li>
-                        <li>www.restaurant.de</li>
-                        <li>Instagram</li>
-                        <li>Facebook</li>
-                        <li>Twitter</li>
-                    </ul>
-                    <hr>
-                    <h5>Sonstiges</h5>
-                </div>
-            </div>
-            <div class="col-md-5"></div>
-        </div>
-    </div>
-</div>
 </div>
 
 
@@ -175,7 +158,7 @@
 
                         <div class="footer-credits">
                             <div class="container">
-                                <div class="top-border ptb-2">
+                                <div class="top-border fc-padding">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="footer-left">&copy; zmyle GmbH . <a target="_blank" href="#">Impressum</a> . <a target="_blank" href="#">Datenschutz</a> . <a target="_blank" href="#">Cookies</a></div>
@@ -228,50 +211,50 @@
           </div>
           <div class="filter-subtitle"><h5>Kategorien</h5></div>
           <div class="filter-check-group">
-              <div class="check-title">Gastronomie</div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                <label class="form-check-label" for="inlineCheckbox1">Cafe</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                <label class="form-check-label" for="inlineCheckbox2">Bar</label>
-              </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                <label class="form-check-label" for="inlineCheckbox3">Restaurant</label>
-              </div>
-          </div>
-          <div class="filter-check-group">
-            <div class="check-title">Geschäfte</div>
+            <div class="check-title">Gastronomie</div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-              <label class="form-check-label" for="inlineCheckbox1">Sport</label>
+              <input class="form-check-input" type="checkbox" id="GastronomieCheckbox1" value="option1">
+              <label class="form-check-label" for="GastronomieCheckbox1">Cafe</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-              <label class="form-check-label" for="inlineCheckbox2">Tee</label>
+              <input class="form-check-input" type="checkbox" id="GastronomieCheckbox2" value="option2">
+              <label class="form-check-label" for="GastronomieCheckbox2">Bar</label>
             </div>
             <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-              <label class="form-check-label" for="inlineCheckbox3">Baumarkt</label>
+              <input class="form-check-input" type="checkbox" id="GastronomieCheckbox3" value="option3">
+              <label class="form-check-label" for="GastronomieCheckbox3">Restaurant</label>
             </div>
         </div>
         <div class="filter-check-group">
-            <div class="check-title">Kultur & Freizeit</div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-              <label class="form-check-label" for="inlineCheckbox1">Tanz</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-              <label class="form-check-label" for="inlineCheckbox2">Kunst</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-              <label class="form-check-label" for="inlineCheckbox3">Theater</label>
-            </div>
-        </div>
+          <div class="check-title">Geschäfte</div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="GeschäfteCheckbox1" value="option1">
+            <label class="form-check-label" for="GeschäfteCheckbox1">Sport</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="GeschäfteCheckbox2" value="option2">
+            <label class="form-check-label" for="GeschäfteCheckbox2">Tee</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="GeschäfteCheckbox3" value="option3">
+            <label class="form-check-label" for="GeschäfteCheckbox3">Baumarkt</label>
+          </div>
+      </div>
+      <div class="filter-check-group">
+          <div class="check-title">Kultur & Freizeit</div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="kfCheckbox1" value="option1">
+            <label class="form-check-label" for="kfCheckbox1">Tanz</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="kfCheckbox2" value="option2">
+            <label class="form-check-label" for="kfCheckbox2">Kunst</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="kfCheckbox3" value="option3">
+            <label class="form-check-label" for="kfCheckbox3">Theater</label>
+          </div>
+      </div>
 
         </div>
         <div class="modal-footer">
@@ -290,7 +273,7 @@
         <script src="vendor/js/bootstrap.bundle.min.js"></script>
         <script src="dist/js/all.js"></script>
         <script async
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoqkDSbGRa1UjIa_85AoI6bginCgv3Sr4&map_ids=5f41d52c83213f7e&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoqkDSbGRa1UjIa_85AoI6bginCgv3Sr4&map_ids=5f41d52c83213f7e&callback=initcustomMap">
 </script>
     </body>
 </html>
