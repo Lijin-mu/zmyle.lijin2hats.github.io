@@ -26,6 +26,7 @@
   "dependencies": {
     "autoprefixer": "^10.2.6",
     "cssnano": "^5.0.6",
+    "graceful-fs": "^4.2.8",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-postcss": "^9.0.0",

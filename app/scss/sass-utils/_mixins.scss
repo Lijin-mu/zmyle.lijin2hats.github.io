@@ -1,0 +1,86 @@
+@mixin roboto-bold {
+  font-family: "Roboto", "Open Sans", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+@mixin roboto-medium {
+  font-family: "Roboto", "Open Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@mixin roboto-light {
+  font-family: "Roboto", "Open Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@mixin roboto-slab-bold {
+  font-family: "Roboto Slab", "Open Sans", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+@mixin roboto-regular {
+  font-family: "Roboto", "Open Sans", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin roboto-slab-medium {
+  font-family: "Roboto Slab", "Open Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@mixin roboto-black {
+  font-family: "Roboto", "Open Sans", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+@mixin container-padding {
+  padding: 0 5rem;
+}
+
+@mixin rmin($minwidth) {
+  @media only screen and (min-width: $minwidth) {
+    @content;
+  }
+}
+
+@mixin rmax($maxwidth) {
+  @media only screen and (max-width: $maxwidth) {
+    @content;
+  }
+}
+
+@mixin rminmax($minwidth, $maxwidth) {
+  @media only screen and (min-width: $minwidth) and (max-width: $maxwidth) {
+    @content;
+  }
+}
+
+@mixin rmaxprtrait($maxwidth) {
+  @media only screen and (min-width: $maxwidth) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin flx {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flx-btwn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flx-ctr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

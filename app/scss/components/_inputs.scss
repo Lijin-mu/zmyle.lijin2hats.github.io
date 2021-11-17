@@ -1,0 +1,15 @@
+.input-style {
+  padding: 0.625rem;
+  color: $textblue;
+  text-decoration: none;
+  font-size: 1rem;
+  line-height: 1.3125rem;
+  flex: 1 1 auto;
+  width: 1%;
+  border: none;
+  outline: 0 !important;
+  @include rmax(767px) {
+    border-radius: 0.3rem;
+    width: 100%;
+  }
+}

@@ -1,0 +1,131 @@
+button,
+.btn {
+  background: #e83675;
+  border: 1px solid #bc155c;
+  outline: 0;
+  padding: 0.625rem 1.6rem;
+  color: #fff;
+  text-decoration: none;
+  @include roboto-regular;
+  font-size: 1rem;
+  line-height: 1.3125rem;
+  border-radius: 0.3rem;
+  margin: auto;
+  &:hover {
+    color: #fff;
+    background: darken($color: #e83675, $amount: 10%);
+  }
+}
+
+.fullwidth-btn {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.4rem;
+  margin-top: 1.5rem;
+  text-align: center;
+  padding: 0.7rem 0;
+  @include roboto-regular;
+  font-size: 1.17rem;
+  line-height: 1.5rem;
+  color: $white;
+  transition: all 0.2s;
+  &:hover {
+    color: $white;
+  }
+}
+.gd-btn-yellow {
+  background: rgb(233, 186, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(233, 186, 0, 1) 0%,
+    rgba(231, 134, 50, 1) 100%
+  );
+  &:hover {
+    background: linear-gradient(
+      90deg,
+      rgb(187, 150, 2) 0%,
+      rgb(207, 118, 40) 100%
+    );
+  }
+}
+
+.gd-btn-lila {
+  background: rgb(146, 79, 141);
+  background: linear-gradient(
+    90deg,
+    rgba(146, 79, 141, 1) 0%,
+    rgba(21, 66, 129, 1) 100%
+  );
+  &:hover {
+    background: linear-gradient(
+      90deg,
+      rgb(138, 65, 133) 0%,
+      rgb(17, 55, 109) 100%
+    );
+  }
+}
+
+.gd-btn-blue {
+  background: rgb(85, 180, 210);
+  background: linear-gradient(
+    90deg,
+    rgba(85, 180, 210, 1) 0%,
+    rgba(21, 66, 129, 1) 100%
+  );
+  &:hover {
+    background: linear-gradient(
+      90deg,
+      rgb(66, 148, 173) 0%,
+      rgb(15, 50, 100) 100%
+    );
+  }
+}
+
+.spl-btn {
+  padding: 0.625rem 2.125rem;
+  border: transparent;
+  border-width: 1px;
+  border-style: solid;
+  color: #fff;
+  text-decoration: none;
+  @include roboto-regular;
+  font-size: 1rem;
+  line-height: 1.3125rem;
+  border-radius: 0.3rem;
+  margin: auto;
+  margin-left: 1rem;
+  @include rmax(767px) {
+    display: block;
+    margin: 0;
+    margin-top: 1rem;
+    padding: 0.5rem 3rem;
+  }
+}
+.btn-blue {
+  background-color: #154281;
+  border-color: #55b4d2;
+  &:hover {
+    background-color: darken($color: #154281, $amount: 10%);
+  }
+}
+.btn-brown {
+  background-color: #eb782d;
+  border-color: #ebb02c;
+  &:hover {
+    background-color: darken($color: #eb782d, $amount: 10%);
+  }
+}
+.form-wrapper {
+  @include flx-btwn;
+  background: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 2.6rem;
+  @include rmax(767px) {
+    flex-direction: column;
+    align-items: inherit;
+    height: auto;
+    background: transparent;
+  }
+}

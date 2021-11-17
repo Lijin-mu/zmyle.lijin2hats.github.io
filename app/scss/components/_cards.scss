@@ -1,0 +1,317 @@
+.ctype-a {
+  margin-top: 2rem;
+  border-radius: 0.3rem;
+  box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.14);
+  -webkit-box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.14);
+  border: 2px solid;
+  border-color: transparent;
+  transition: all 0.1s;
+  &:hover {
+    border-color: #e78632;
+    transform: scale(1.04);
+  }
+  @include rminmax(768px, 992px) {
+    margin-bottom: 2rem;
+  }
+  @include rmax(767px) {
+    margin-top: 4rem;
+  }
+
+  .card-header {
+    background-color: #fff;
+    border-bottom: 0;
+    padding: 0;
+    border-radius: 0.6rem;
+    position: relative;
+    img {
+      margin-top: -2.7rem;
+      width: calc(100% + 1.6rem);
+      margin-left: -0.8rem;
+    }
+    .sub-img {
+      width: 5.85rem;
+      height: 5.85rem;
+      border-radius: 0.4rem;
+      position: absolute;
+      right: 0.1rem;
+      bottom: 2rem;
+      img {
+        margin-top: 0;
+        width: 100%;
+        border: 0.25rem solid #fff;
+        background: #fff;
+        border-radius: 0.3rem;
+      }
+    }
+  }
+  .card-body {
+    padding: 1.2rem;
+    padding-top: 0;
+
+    .card-title {
+      @include roboto-light;
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+      color: $textblue;
+    }
+    .item-value-row {
+      @include flx-btwn;
+      @include roboto-light;
+      font-size: 0.875rem;
+      line-height: 0.875rem;
+      margin-bottom: 0.5rem;
+      .ivr-item {
+        color: $textblue;
+      }
+      .ivr-value {
+        color: $primary;
+        img {
+          width: 1.2rem;
+          height: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+.ctype-flexy {
+  margin-top: 2rem;
+  border-radius: 0.3rem;
+  box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.14);
+  -webkit-box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.14);
+  border: 2px solid;
+  border-color: transparent;
+  transition: all 0.1s;
+  &:hover {
+    border-color: #e78632;
+    transform: scale(1.04);
+  }
+  @include rminmax(768px, 992px) {
+    margin-bottom: 2rem;
+  }
+  @include rmax(767px) {
+    margin-top: 50px;
+  }
+
+  .card-header {
+    background-color: #fff;
+    border-bottom: 0;
+    padding: 0;
+    border-radius: 0.6rem;
+    position: relative;
+    img {
+      margin-top: -2.7rem;
+      width: calc(100% + 1.6rem);
+      margin-left: -0.8rem;
+    }
+    .sub-img {
+      width: 5.85rem;
+      height: 5.85rem;
+      border-radius: 0.4rem;
+      position: absolute;
+      right: 0.1rem;
+      bottom: 2rem;
+      img {
+        margin-top: 0;
+        width: 100%;
+        border: 0.25rem solid #fff;
+        background: #fff;
+        border-radius: 0.3rem;
+      }
+    }
+  }
+  .card-body {
+    padding: 1.2rem;
+    padding-top: 0;
+    position: relative;
+    .card-title {
+      @include roboto-light;
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+      color: $textblue;
+    }
+    .inner-flex {
+      width: auto;
+      height: auto;
+      position: relative;
+      .flex-up-row {
+        width: 100%;
+        height: auto;
+        .flex-text {
+          @include roboto-light;
+          font-size: 1rem;
+          line-height: 1.3;
+          color: $textblue;
+        }
+      }
+      .flexy-bottom-row {
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        .fbtm-txt {
+          @include roboto-light;
+          font-size: 0.875rem;
+          line-height: 1.3;
+          color: #e98623;
+          display: none;
+        }
+        .fbtm-icon {
+          color: $primary;
+          img {
+            width: 1.2rem;
+            height: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.ctype-map {
+  max-width: 200px;
+  height: auto;
+  margin-top: 2rem;
+  border: 0;
+  @include rminmax(768px, 992px) {
+    margin-bottom: 2rem;
+  }
+  @include rmax(767px) {
+    margin-top: 4rem;
+  }
+
+  .card-header {
+    background-color: #fff;
+    border-bottom: 0;
+    padding: 0;
+    border-radius: 0.6rem;
+    position: relative;
+    img {
+      margin-top: -1.75rem;
+      width: 100%;
+    }
+    .sub-img {
+      width: 5.85rem;
+      height: 5.85rem;
+      border-radius: 0.4rem;
+      position: absolute;
+      right: 1.1rem;
+      bottom: 2rem;
+      img {
+        margin-top: 0;
+        width: 100%;
+        border: 0.25rem solid #fff;
+        background: #fff;
+        border-radius: 0.3rem;
+      }
+    }
+  }
+  .card-body {
+    padding: 1.2rem;
+    padding-top: 0;
+
+    .card-title {
+      @include roboto-light;
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+      color: $textblue;
+    }
+    .item-value-row {
+      @include flx-btwn;
+      @include roboto-light;
+      font-size: 0.875rem;
+      line-height: 0.875rem;
+      margin-bottom: 0.5rem;
+      .ivr-item {
+        color: $textblue;
+      }
+      .ivr-value {
+        color: $primary;
+        img {
+          width: 1.2rem;
+          height: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+.ctype-netcard {
+  margin-top: 2rem;
+  border-radius: 0.3rem;
+  box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.14);
+  -webkit-box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.14);
+  border: 2px solid;
+  border-color: transparent;
+  max-width: 14rem;
+  margin-right: 0.4rem;
+  transition: all 0.1s;
+  &:hover {
+    border-color: #6cbbd7;
+    transform: scale(1.04);
+  }
+  @include rminmax(768px, 992px) {
+    margin-bottom: 2rem;
+  }
+  @include rmax(767px) {
+    margin-top: 4rem;
+    max-width: 100%;
+  }
+
+  .card-header {
+    background-color: #fff;
+    border-bottom: 0;
+    padding: 0;
+    border-radius: 0.6rem;
+    position: relative;
+    img {
+      margin-top: -2.5rem;
+      width: 106%;
+      margin-left: -3%;
+      @include rmax(767px) {
+        margin-top: -10%;
+      }
+    }
+    .sub-img {
+      width: 5.85rem;
+      height: 5.85rem;
+      border-radius: 0.4rem;
+      position: absolute;
+      right: 1.1rem;
+      bottom: 2rem;
+      img {
+        margin-top: 0;
+        width: 100%;
+        border: 0.25rem solid #fff;
+        background: #fff;
+        border-radius: 0.3rem;
+      }
+    }
+  }
+  .card-body {
+    padding: 0;
+    padding-left: 0.5rem;
+
+    .card-title {
+      @include roboto-regular;
+      font-size: 1rem;
+      line-height: 1.3rem;
+      color: $textblue;
+    }
+  }
+}
+
+.btm-text-card {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  padding: 2rem;
+  color: $textblue;
+  border-radius: 0.375rem;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}

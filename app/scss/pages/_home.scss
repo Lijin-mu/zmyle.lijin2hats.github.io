@@ -1,0 +1,198 @@
+.banner {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  .bannerimg {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+  }
+  .banner-overlay {
+    position: absolute;
+    @include container-padding;
+    @include rmax(992px) {
+      padding: 0 30px;
+    }
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba($bgblue, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    .title-wrapper {
+      width: 43%;
+      height: auto;
+      margin-top: 10vh;
+      h1 {
+        margin-bottom: 0.5rem;
+      }
+      @include rmax(992px) {
+        width: 100%;
+        margin-top: 90px;
+      }
+    }
+    .subscription-form {
+      width: 100%;
+      max-width: 20.625rem;
+      height: auto;
+      border-radius: 0.3rem;
+      overflow: hidden;
+      @include rmax(992px) {
+        width: 100%;
+        background-color: transparent;
+      }
+      button {
+        width: auto;
+        padding: 0.625rem;
+        margin: 0;
+        border: 1px solid #e83675;
+        @include rmax(767px) {
+          width: 100%;
+          margin-top: 20px;
+        }
+      }
+    }
+    .pay-icons {
+      display: flex;
+      margin-top: 4rem;
+      @include rmax(992px) {
+        margin-top: 2rem;
+      }
+      li {
+        padding-right: 0.235rem;
+        font-size: 1.3rem;
+        @include rmax(992px) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+.social {
+  width: 100%;
+  height: auto;
+  background: url("../../images/social-icons-zigzag.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 60%;
+  color: $textblue;
+  @include rmax(992px) {
+    background: transparent;
+  }
+  p {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    @include roboto-regular;
+    margin-top: 3rem;
+  }
+  a {
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    @include roboto-regular;
+    color: $primary;
+    &:hover {
+      color: $darkpink;
+    }
+  }
+}
+.overview {
+  width: 100%;
+  height: auto;
+  background: url("../../images/overview.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 60%;
+  @include rmax(992px) {
+    background: transparent;
+  }
+  a {
+    color: $darkpink;
+    &:hover {
+      color: $primary;
+    }
+  }
+  a.btn {
+    color: #fff;
+  }
+}
+
+.heading-btn-section {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 0.75rem;
+  h5 {
+    margin-bottom: 0;
+    color: #0e2645;
+  }
+  @include rminmax(768px, 992px) {
+    h5 {
+      line-height: 1.3;
+    }
+  }
+  @include rmax(767px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.specs {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background: rgb(21, 66, 129);
+  background: linear-gradient(
+    90deg,
+    rgba(21, 66, 129, 1) 0%,
+    rgba(14, 38, 69, 1) 100%
+  );
+  .row {
+    margin-left: -1.35rem;
+    margin-right: -1.35rem;
+    .lgap {
+      padding-left: 1.35rem;
+      padding-right: 1.35rem;
+    }
+  }
+}
+
+.details-card {
+  width: auto;
+  height: 100%;
+  padding: 1.875rem;
+  background-color: $white;
+  border-radius: 0.4rem;
+  text-align: left;
+  color: $textblue;
+  @include rmax(992px) {
+    height: auto;
+    margin-top: 2rem;
+  }
+  .dc-head {
+    margin-bottom: 3rem;
+    img {
+      height: 3rem;
+      width: auto;
+      @include rmax(992px) {
+        height: 2rem;
+      }
+    }
+  }
+  .dc-title {
+    @include roboto-bold;
+    font-size: 1.125rem;
+    line-height: 1.375rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@include rmax(767px) {
+  aside {
+    margin-bottom: 2.5rem;
+  }
+}
